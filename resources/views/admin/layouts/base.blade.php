@@ -38,6 +38,8 @@
 
                         <li class="mx-2"><a href="{{route('admin.posts.index')}}">Post</a></li>
 
+                        <li class="mx-2"><a href="{{route('admin.categories.index')}}">Categorie</a></li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -11,7 +11,7 @@
                 <div><strong>Slug: </strong>{{$post->slug}}</div>
                 <div><strong>Categoria: </strong>{{$post->category->name}}</div>
                 {{-- qui inserisco i dati riguardanti i post --}}
-                <a href="{{route('admin.posts.index')}}"></a>
+                <a class="btn btn-primary" href="{{route('admin.posts.index')}}">Torna alla lista</a>
             </div>
         </div>
     </div>
