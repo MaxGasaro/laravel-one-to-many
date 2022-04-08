@@ -6,9 +6,9 @@
             <div class="col-md-12">
 
                 <h1>Visualizza post</h1>
-                <div><strong>Categoria: </strong>{{$post->title}}</div>
-                <div><strong>Categoria: </strong>{{!! $post->content !!}}</div>
-                <div><strong>Categoria: </strong>{{$post->slug}}</div>
+                <div><strong>Titolo: </strong>{{$post->title}}</div>
+                <div><strong>Contenuto: </strong>{{!! $post->content !!}}</div>
+                <div><strong>Slug: </strong>{{$post->slug}}</div>
                 <div><strong>Categoria: </strong>{{$post->category->name}}</div>
                 {{-- qui inserisco i dati riguardanti i post --}}
                 <a href="{{route('admin.posts.index')}}"></a>

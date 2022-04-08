@@ -24,19 +24,20 @@
                         
                             <tr>
                                 
-                                <td>{{$posts->id}}</td>
-                                <td>{{$posts->title}}</td>
-                                <td>{{substr($posts->content,0,30)}}</td>
-                                <td>{{$posts->slug}}</td>
-                                <td>{{$posts->category->name}}</td>
-                                <td>
-                                    <a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary"></a>
-                                    <a href="{{route('admin.posts.edit', $post->id)}}" class="btn btn-primary"></a>
+                                <td>{{$post->id}}</td>
+                                <td>{{$post->title}}</td>
+                                <td>{{substr($post->content,0,30)}}</td>
+                                <td>{{$post->slug}}</td>
+                                <td>{{$post->category->name}}</td>
+                                <td class="d-flex">
+                                    <a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary" role="button">Vedi</a>
+                                    <a href="{{route('admin.posts.edit', $post->id)}}" class="btn btn-warning mx-3" role="button">Modifica</a>
 
                                     <form method="POST" action="{{route('admin.posts.destroy', $post->id)}}">
                                         @csrf
                                         @method('DELETE')
 
+                                        <button type='submit' class="btn btn-danger">Elimina</button>
                                     </form>
                                 </td>
 
